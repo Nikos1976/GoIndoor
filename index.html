@@ -10,12 +10,10 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwZwIW81kBp8uZ7XNUC6T_ItckV1QGIqM&libraries=places,geometry,drawing&sensor=true"></script>
 
     <script type="text/javascript">
-      var map;
-      function initialize() {
-        var mapOptions = { center: new google.maps.LatLng(58, 16), zoom: 7, mapTypeId: le.maps.MapTypeId.ROADMAP
-        };
-        map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
+ function initialize() {
+
+            var mapProp = { center: new google.maps.LatLng(30, 0), disableDefaultUI: true, zoom: 2, minZoom: 2, fullscreenControl: true, fullscreenControlOptions: { position: google.maps.ControlPosition.TOP_LEFT} };
+            map = new google.maps.Map(document.getElementById("map_canvas"), mapProp);
       }
     </script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>    
